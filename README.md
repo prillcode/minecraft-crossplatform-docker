@@ -101,6 +101,7 @@ Edit `docker-compose.yml` to customize:
 
 ### Create Destination Worlds
 
+Multiverse Plugin used for world creations. See [/mv create command docs](https://mvplugins.org/core/fundamentals/commands-usage/#Create-Command) for world customization options.
 ```bash
 
 # Reopen minecraft cli in docker if not still open from above

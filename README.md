@@ -197,10 +197,10 @@ Server Address: YOUR_SERVER_IP:25565
 │   │   ├── Multiverse-Portals.jar
 │   │   ├── LuckPerms-Bukkit.jar
 │   │   └── [plugin configs/]
-│   ├── world/                  # Main survival world
-│   ├── PrillHub/              # Hub world
-│   ├── PrillsCreative/        # Creative world
-│   ├── PrillsAdventure/       # Adventure world
+│   ├── [HubWorldName]/             # Required: Hub world
+│   ├── [SurvivalWorldName]/        # Optional: Survival world
+│   ├── [CreativeWorldName]/        # Optional: Creative world
+│   ├── [AdventureWorldName]/       # Optional: Adventure world
 │   └── server.properties
 └── README.md
 ```

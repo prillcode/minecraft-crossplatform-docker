@@ -38,6 +38,7 @@ data/plugins/**/playerdata/
 # Specific plugin runtime data
 data/plugins/Geyser-Spigot/
 data/plugins/floodgate/
+data/plugins/floodgate/*.pem
 data/plugins/ViaVersion/
 data/plugins/spark/
 data/plugins/bStats/
@@ -56,8 +57,16 @@ data/plugins/bStats/
 
 # But exclude databases and user data within config folders
 data/plugins/**/luckperms-h2.mv.db
+data/plugins/**/luckperms*.mv.db
 data/plugins/**/luckperms.db
 data/plugins/LuckPerms/storage/
+data/plugins/LuckPerms/libs/
+
+# Multiverse-Inventories player data (exclude individual player inventories)
+data/plugins/Multiverse-Inventories/players/
+data/plugins/Multiverse-Inventories/playernames.json
+data/plugins/Multiverse-Inventories/worlds/**/*.json
+data/plugins/Multiverse-Inventories/groups/default/
 
 # =============================================================================
 # Server Runtime Files (EXCLUDE)
@@ -82,6 +91,10 @@ data/.paper-remapped/
 data/libraries/
 data/versions/
 data/minecraft_server*.jar
+
+# Plugin runtime metadata and caches
+data/plugins/.paper-remapped/
+data/plugins/.var-list-manifest.json
 
 # =============================================================================
 # Environment Files (EXCLUDE - may contain secrets)

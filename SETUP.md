@@ -24,19 +24,17 @@ sudo netstat -tulpn | grep -E '25565|19132'
 # Should return nothing (ports available)
 ```
 
-## Step 1: Clone and Setup
+## Step 1: Clone/Fork Repo
 
 ```bash
 # Clone the repository 
 git clone https://github.com/prillcode/minecraft-crossplatform-docker.git
 
-# Or Fork it first then clone from your forked repo!
+# Or Fork it first, then clone from your forked repo!
 
 # Navigate to cloned repo on your machine
 cd minecraft-crossplatform-docker
 
-# Create plugins directory if it doesn't exist
-mkdir -p data/plugins
 ```
 
 ## Step 2: Download Plugins

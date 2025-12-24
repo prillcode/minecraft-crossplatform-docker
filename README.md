@@ -22,11 +22,18 @@ Cross-platform (Java + Bedrock) Minecraft server running in Docker with multi-wo
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/prillcode/minecraft-crossplatform-docker.git
-   cd minecraft-crossplatform-docker
-   ```
+1. **Clone/Fork the repository**
+
+```bash
+# Clone the repository 
+git clone https://github.com/prillcode/minecraft-crossplatform-docker.git
+
+# Or Fork it first, then clone from your forked repo!
+
+# Navigate to cloned repo on your machine
+cd minecraft-crossplatform-docker
+
+```
 
 2. **Download required plugins**
    

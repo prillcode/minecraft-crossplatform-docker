@@ -119,6 +119,13 @@ docker exec -i minecraft-server rcon-cli
 
 #### Create Hub World
 
+- The "Hub" world is where players will spawn into each time they join the server.
+- The Portals will be created here taking players to the actual Destination worlds.
+- The hub world is created in ADVENTURE mode so portals/structures can't be destroyed.
+- While you create the portals/structure the gamemode is changed to creative.
+- It serves as a Lobby to your worlds.
+- A FLAT world is suggested, but it doesn't have to be. 
+
 ```bash
 
 # Create a flat world for the "Hub" world** - "HubWorldName" can be any name desired (ex: "SmithFamilyHub")

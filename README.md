@@ -19,8 +19,8 @@ Docker host and other PC's and consoles must all be on same LAN for cross-platfo
 
 ### Prerequisites
 
-- Docker & Docker Compose
-- Linux host (tested on Pop!_OS 22.04, should work on Ubuntu/Debian)
+- Linux machine (laptop/PC/VM) or WSL on Windows with Docker installed
+- Docker Compose
 - 4GB+ RAM available
 - Ports 25565 (Java) and 19132 (Bedrock) available
 

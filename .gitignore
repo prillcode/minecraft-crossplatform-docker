@@ -1,0 +1,130 @@
+# Minecraft Server .gitignore
+# For Docker-based Paper/Spigot server with Multiverse
+
+# =============================================================================
+# World Data (EXCLUDE - too large, player-generated content)
+# =============================================================================
+data/world/
+data/world_*/
+data/*/
+
+# Include (!=)
+!data/plugins/
+!data/server.properties
+!data/bukkit.yml
+!data/spigot.yml
+!data/paper.yml
+!data/paper-*.yml
+
+
+
+# =============================================================================
+# Plugin JARs (EXCLUDE - can be re-downloaded)
+# =============================================================================
+data/plugins/*.jar
+
+# =============================================================================
+# Plugin Data & Caches (EXCLUDE - generated at runtime)
+# =============================================================================
+data/plugins/**/cache/
+data/plugins/**/logs/
+data/plugins/**/database.db
+data/plugins/**/*.db
+data/plugins/**/*.db-*
+data/plugins/**/h2/
+data/plugins/**/userdata/
+data/plugins/**/playerdata/
+
+# Specific plugin runtime data
+data/plugins/Geyser-Spigot/
+data/plugins/floodgate/
+data/plugins/ViaVersion/
+data/plugins/spark/
+data/plugins/bStats/
+
+# =============================================================================
+# Plugin Configs (INCLUDE - important for reproducibility)
+# =============================================================================
+!data/plugins/Multiverse-Core/
+!data/plugins/Multiverse-Inventories/
+!data/plugins/Multiverse-Portals/
+!data/plugins/LuckPerms/
+!data/plugins/**/config.yml
+!data/plugins/**/settings.yml
+!data/plugins/**/worlds.yml
+!data/plugins/**/portals.yml
+
+# But exclude databases and user data within config folders
+data/plugins/**/luckperms-h2.mv.db
+data/plugins/**/luckperms.db
+data/plugins/LuckPerms/storage/
+
+# =============================================================================
+# Server Runtime Files (EXCLUDE)
+# =============================================================================
+data/logs/
+data/crash-reports/
+data/debug/
+data/*.log
+data/*.log.*
+data/usercache.json
+data/usernamecache.json
+data/banned-*.json
+data/whitelist.json
+data/ops.json
+data/session.lock
+
+# =============================================================================
+# Server Cache & Temp (EXCLUDE)
+# =============================================================================
+data/cache/
+data/.paper-remapped/
+data/libraries/
+data/versions/
+data/minecraft_server*.jar
+
+# =============================================================================
+# Environment Files (EXCLUDE - may contain secrets)
+# =============================================================================
+.env
+.env.local
+*.env
+
+# =============================================================================
+# IDE & Editor Files
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# Docker
+# =============================================================================
+# Keep docker-compose.yml but exclude overrides
+docker-compose.override.yml
+
+# =============================================================================
+# Backups (EXCLUDE)
+# =============================================================================
+*.tar.gz
+*.zip
+backup*/
+backups/
+
+# =============================================================================
+# Documentation (INCLUDE)
+# =============================================================================
+!README.md
+!SETUP.md
+!*.md
+
+# =============================================================================
+# Scripts (INCLUDE)
+# =============================================================================
+!scripts/
+!*.sh
+!*.bash

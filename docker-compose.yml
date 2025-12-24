@@ -1,0 +1,21 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft-server
+    network_mode: "host"
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      VERSION: "LATEST"
+      MEMORY: "3G"
+      # Custom server description
+      SERVER_NAME: "Family MC Server"
+      MOTD: "§6Welcome to Our §r §bFamily Worlds!"
+      # Only auto-download plugins that work reliably
+      PLUGINS: |
+        https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot
+        https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/spigot
+        https://hangar.papermc.io/api/v1/projects/ViaVersion/versions/5.6.1-SNAPSHOT+880/PAPER/download
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

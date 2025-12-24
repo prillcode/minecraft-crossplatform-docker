@@ -1,0 +1,61 @@
+portals:
+  DDPrillHubPortal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: 446.0,62.0,-665.0:446.0,64.0,-662.0
+    world: world
+    destination: w:PrillHub
+  PHDodeDunesPortal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: 110.0,-60.0,22.0:113.0,-57.0,22.0
+    world: PrillHub
+    destination: w:world
+  PHCreativePortal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: 116.0,-60.0,22.0:119.0,-57.0,22.0
+    world: PrillHub
+    destination: w:PrillsCreative
+  CreativeHubPortal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: -25.0,69.0,-24.0:-22.0,72.0,-24.0
+    world: PrillsCreative
+    destination: w:PrillHub
+  PHAdventurePortal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: 122.0,-60.0,22.0:125.0,-57.0,22.0
+    world: PrillHub
+    destination: w:PrillsAdventure
+  AdventureHubPortal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: -15.0,63.0,26.0:-15.0,66.0,29.0
+    world: PrillsAdventure
+    destination: w:PrillHub

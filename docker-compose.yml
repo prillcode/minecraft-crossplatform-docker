@@ -2,7 +2,7 @@ services:
   minecraft:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
-    network_mode: "host"
+    network_mode: "host" #IMPORTANT: this mode allows better LAN/network discovery!
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
@@ -10,7 +10,7 @@ services:
       MEMORY: "3G"
       # Custom server description
       SERVER_NAME: "Family MC Server"
-      MOTD: "§6Welcome to Our §r §bFamily Worlds!"
+      MOTD: "Welcome to Our Family Worlds!"
       # Only auto-download plugins that work reliably
       PLUGINS: |
         https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/spigot

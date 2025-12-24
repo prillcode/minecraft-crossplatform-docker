@@ -4,10 +4,10 @@ Minecraft server running in Docker that allows Cross-platform (Java + Bedrock) p
 
 ## Use Case
 
-Same household, multiple Minecraft user accounts, cross-platform desired (PC + Xbox tested, PS5/Switch likely works too).  
+Same household/LAN, multiple Minecraft user accounts, cross-platform (PC + Xbox tested, PS5/Switch likely works too).  
 
-- This Docker-hosted Minecraft server image with preloaded Plugins will give your household hours of Minecrafting playing fun!
-- All PC's and consoles must all be on same LAN to play together.
+- This Docker-hosted Minecraft server image with preloaded Plugins will give your household hours of Minecraft fun!
+- All PC's and consoles must be on same LAN to play together.
 - This is ideal for a family/household playing on same Home WiFi network where multiple children/parents/roomates have different Minecraft player accounts and devices.
 - One PC/laptop, preferably Linux-based (but WSL on Windows should work too) will serve as the Minecraft server running in Docker. 
 
@@ -16,10 +16,10 @@ IMPORTANT: On Xbox running Bedrock, the server shows up on the "Worlds" tab as a
 ## Features
 
 - 🎮 **Cross-Platform LAN Play** - Java Edition and Bedrock Edition (Xbox, Mobile) on same LAN (Local Area Network) with GeyserMC and Floodgate plugins
-- 🌍 **Multi-World Support** - Survival, Creative, and Adventure worlds with portal navigation via Multiverse plugins.
+- 🌍 **Multi-World Support** - Ability to create multiple Survival, Creative, and Adventure worlds with portal navigation via Multiverse plugins.
 - 🔒 **Permissions** - Granular player permissions set by LuckPerms plugin (used to enable Portal travel between worlds in this setup)
-- 📦 **Containerized** - Fully Dockerized for easy deployment and network discovery
-- 🏠 **LAN Discovery** - Xbox consoles (and likely others) auto-discover the server on the local network
+- 📦 **Containerized** - Fully Dockerized for easy deployment and network discovery (docker network_mode = "host" for better discovery)
+- 🏠 **LAN Discovery** - Xbox consoles (and likely others) should auto-discover the server on the local network without having to "add custom server"
 
 ## Quick Start
 

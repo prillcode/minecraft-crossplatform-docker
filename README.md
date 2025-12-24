@@ -6,7 +6,10 @@ Minecraft server running in Docker that allows Cross-platform (Java + Bedrock) p
 
 Same household, multiple Minecraft user accounts, cross-platform desired (PC + Xbox tested, PS5/Switch likely works too).  
 
-This Docker-hosted Minecraft server image will serve your needs! All PC's and consoles must all be on same LAN to play together. This is ideal for a family playing on same Home WiFi network where multiple children/parents/roomates have different Minecraft player accounts and devices. One PC/laptop, preferably Linux-based (all though WSL on Windows should work too) will serve as the Minecraft server running in Docker. 
+- This Docker-hosted Minecraft server image with preloaded Plugins will give your household hours of Minecrafting playing fun!
+- All PC's and consoles must all be on same LAN to play together.
+- This is ideal for a family/household playing on same Home WiFi network where multiple children/parents/roomates have different Minecraft player accounts and devices.
+- One PC/laptop, preferably Linux-based (but WSL on Windows should work too) will serve as the Minecraft server running in Docker. 
 
 IMPORTANT: On Xbox running Bedrock, the server shows up on the "Worlds" tab as a LAN-discovered World (as opposed to being on "Servers" tab due to how consoles restrict adding custom servers).
 
@@ -156,27 +159,31 @@ docker exec -i minecraft-server rcon-cli
    - Portal should be at least 2 blocks wide and 3 blocks tall
 
 3. **Get the portal wand:**
+   - Use multiverse portals `/mvp wand` command to start!
 ```bash
 /mvp wand
 
 # (This gives you a wooden axe)
 ```
    
-
 4. **Select portal area (using the axe "wand"):**
    - LEFT-CLICK the bottom-left corner block
    - RIGHT-CLICK the opposite top-right corner block
+   - Confirmation text should show selections.
 
-5. **Create and configure the portal:**
-   ```bash
-   /mvp create ToSurvivalWorld
-   /mvp modify ToSurvivalWorld dest w:WorldName
-   ```
+5. **Immediately run following commands in succession to create and configure the just-selected portal:**
+   - Use multiverse portals `/mvp create` and `/mvp modify`  commands
+   - Portal name can be anything. Below example uses "ToSurvivalWorldPortal".
+```bash
+/mvp create ToSurvivalWorldPortal
+/mvp modify ToSurvivalWorldPortal dest w:WorldName
+```
 
-6. **Walk through to test** - you should teleport to the destination world
+6. **Walk through to test** 
+   - If no errors occured, walking through should teleport you to the destination world!
 
 7. **Build return portal** in the destination world:
-   
+   - Use same steps to build a portal back to the Hub world if desired
 ```bash
 /mvp wand
 # [select portal area]

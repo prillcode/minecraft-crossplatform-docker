@@ -1,6 +1,6 @@
 # Detailed Setup Guide
 
-Step-by-step guide to get your Minecraft server running from scratch.
+This document repeats the same content described in the README, but includes clarification steps to help get your Local docker-hosted Minecraft server running!
 
 ## Prerequisites Check
 
@@ -173,11 +173,7 @@ exit
 
 ```bash
 # Join the server in Minecraft
-# Then from in-game or console:
-
-docker exec -i minecraft-server rcon-cli
-
-# Teleport to hub
+# Then from in-game - Teleport to hub world
 /mv tp HubWorld
 
 # Stand where you want players to spawn

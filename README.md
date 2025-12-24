@@ -4,22 +4,25 @@ Minecraft server running in Docker that allows Cross-platform (Java + Bedrock) p
 
 ## Use Case
 
-Docker host and other PC's and consoles must all be on same LAN for cross-platform play. This is ideal for a family playing on same Home WiFi network as the Minecraft server running in Docker shows up on Xbox on the "Worlds" tab as a LAN World (as opposed to connecting from "Servers" tab due to restriction by the console).
+Same household, multiple Minecraft user accounts, cross-platform desired (PC + Xbox tested, PS5/Switch likely works too).  
+
+This Docker-hosted Minecraft server image will serve your needs! All PC's and consoles must all be on same LAN to play together. This is ideal for a family playing on same Home WiFi network where multiple children/parents/roomates have different Minecraft player accounts and devices. One PC/laptop, preferably Linux-based (all though WSL on Windows should work too) will serve as the Minecraft server running in Docker. 
+
+IMPORTANT: On Xbox running Bedrock, the server shows up on the "Worlds" tab as a LAN-discovered World (as opposed to being on "Servers" tab due to how consoles restrict adding custom servers).
 
 ## Features
 
-- 🎮 **Cross-Platform Play** - Java Edition and Bedrock Edition (Xbox, Mobile) on the same server
-- 🌍 **Multi-World Support** - Survival, Creative, and Adventure worlds with portal navigation
-- 🚪 **Hub System** - Central hub world with themed portals to different worlds
-- 🔒 **Permissions** - LuckPerms for granular player permissions
-- 📦 **Containerized** - Fully Dockerized for easy deployment
-- 🏠 **LAN Discovery** - Xbox consoles auto-discover the server on the local network
+- 🎮 **Cross-Platform LAN Play** - Java Edition and Bedrock Edition (Xbox, Mobile) on same LAN (Local Area Network) with GeyserMC and Floodgate plugins
+- 🌍 **Multi-World Support** - Survival, Creative, and Adventure worlds with portal navigation via Multiverse plugins.
+- 🔒 **Permissions** - Granular player permissions set by LuckPerms plugin (used to enable Portal travel between worlds in this setup)
+- 📦 **Containerized** - Fully Dockerized for easy deployment and network discovery
+- 🏠 **LAN Discovery** - Xbox consoles (and likely others) auto-discover the server on the local network
 
 ## Quick Start
 
 ### Prerequisites
 
-- Linux machine (laptop/PC/VM) or WSL on Windows with Docker installed
+- Docker installed on Linux machine (laptop/PC) preferred; or WSL on Windows
 - Docker Compose
 - 4GB+ RAM available
 - Ports 25565 (Java) and 19132 (Bedrock) available
@@ -41,9 +44,9 @@ cd minecraft-crossplatform-docker
 
 2. **Download required plugins**
    
-The included docker-compose file auto-downloads GeyserMC, Floodgate, and ViaVersion.  
+The included docker-compose file auto-downloads GeyserMC, Floodgate, and ViaVersion plugins.  
 
-You need to manually download:
+The following plugins need to be manually downloaded. The commands below download each to the data/plugins directory in the repo, which is mapped to the Docker volume on startup:
 
 ```bash
 # Multiverse-Core
@@ -62,7 +65,7 @@ wget -O data/plugins/Multiverse-Portals.jar \
 # - Click the big "Bukkit" download button
 # - It'll save to ~/Downloads/
 
-# Then copy it to your server repo plugins folder:
+# Then copy it to your server repo data/plugins folder used by the docker volume:
 cp ~/Downloads/LuckPerms-Bukkit-*.jar ~/path-to-cloned-repo/minecraft-crossplatform-docker/data/plugins/
 ```
 
@@ -103,7 +106,7 @@ Edit `docker-compose.yml` to customize:
 # Reopen minecraft cli in docker if not still open from above
 docker exec -i minecraft-server rcon-cli
 
-# Create a new world
+# Use multiverse 'mv' command to create world(s) - "WorldName" can be any name desired (ex: "SmithFamilySurvival")
 /mv create WorldName NORMAL
 
 # Set world gamemode as desired (creative/survival/adventure)
@@ -117,7 +120,7 @@ docker exec -i minecraft-server rcon-cli
 
 ```bash
 
-# Create a flat world for the "Hub" world**
+# Create a flat world for the "Hub" world** - "HubWorldName" can be any name desired (ex: "SmithFamilyHub")
 
 /mv create HubWorldName NORMAL --world-type FLAT
 
@@ -126,11 +129,11 @@ docker exec -i minecraft-server rcon-cli
 
 ### Creating Portals
 
-**Important:** Hub world set to adventure mode to prevent portal destruction
+**Important:** Hub world created in adventure mode to prevent portal destruction
 
 **Portal Creation Workflow:**
 
-1. **In Hub world, switch to creative mode temporarily:**  
+1. **In Hub world, switch to creative mode temporarily during portal/structure creation:**  
    
 ```bash
 

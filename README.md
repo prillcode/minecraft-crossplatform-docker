@@ -1,6 +1,10 @@
 # Family Minecraft Server - Docker Setup
 
-Cross-platform (Java + Bedrock) Minecraft server running in Docker with multi-world support and portal navigation.
+Minecraft server running in Docker that allows Cross-platform (Java + Bedrock) play on **same LAN (Home WiFi network)**. Included plugins add multi-world support and portal navigation.
+
+## Use Case
+
+Docker host and other PC's and consoles must all be on same LAN for cross-platform play. This is ideal for a family playing on same Home WiFi network as the Minecraft server running in Docker shows up on Xbox on the "Worlds" tab as a LAN World (as opposed to connecting from "Servers" tab due to restriction by the console).
 
 ## Features
 

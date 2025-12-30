@@ -10,7 +10,6 @@ data/*/
 
 # Include (!=)
 !data/plugins/
-!data/server.properties
 !data/bukkit.yml
 !data/spigot.yml
 !data/paper.yml
@@ -82,6 +81,9 @@ data/banned-*.json
 data/whitelist.json
 data/ops.json
 data/session.lock
+data/server.properties
+data/.papermc-manifest.json
+data/.rcon-cli.yaml
 
 # =============================================================================
 # Server Cache & Temp (EXCLUDE)

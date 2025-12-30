@@ -1,3 +1,315 @@
+BeaninSeason13:
+  adjust-spawn: true
+  alias: ''
+  allow-advancement-grant: true
+  allow-flight: false
+  allow-weather: true
+  anchor-respawn: true
+  auto-heal: true
+  auto-load: true
+  bed-respawn: true
+  biome: ''
+  difficulty: easy
+  entry-fee:
+    enabled: false
+    amount: 0.0
+    currency: '@vault-economy'
+  environment: normal
+  gamemode: survival
+  generator: ''
+  hidden: false
+  hunger: true
+  keep-spawn-in-memory: false
+  player-limit: -1
+  portal-form: all
+  pvp: true
+  respawn-world: ''
+  scale: 1.0
+  seed: -5434949536362506299
+  spawn-location:
+    ==: MVSpawnLocation
+    x: -867.4632012749722
+    y: 125.0
+    z: -11004.035432889395
+    pitch: 12.299979
+    yaw: -160.3501
+  spawning:
+    monster:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_underground_creature:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    axolotl:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    misc:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+  world-blacklist: []
+  version: 1.2
+PrillHardcore:
+  adjust-spawn: true
+  alias: ''
+  allow-advancement-grant: true
+  allow-flight: false
+  allow-weather: true
+  anchor-respawn: true
+  auto-heal: true
+  auto-load: true
+  bed-respawn: true
+  biome: ''
+  difficulty: hard
+  entry-fee:
+    enabled: false
+    amount: 0.0
+    currency: '@vault-economy'
+  environment: normal
+  gamemode: survival
+  generator: ''
+  hidden: false
+  hunger: true
+  keep-spawn-in-memory: false
+  player-limit: -1
+  portal-form: all
+  pvp: true
+  respawn-world: ''
+  scale: 1.0
+  seed: -705343486826938968
+  spawn-location:
+    ==: MVSpawnLocation
+    x: 96.5
+    y: 72.0
+    z: -32.5
+    pitch: 0.0
+    yaw: 0.0
+  spawning:
+    monster:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_underground_creature:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    axolotl:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    misc:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+  world-blacklist: []
+  version: 1.2
+PrillHardcore_nether:
+  adjust-spawn: true
+  alias: ''
+  allow-advancement-grant: true
+  allow-flight: false
+  allow-weather: true
+  anchor-respawn: true
+  auto-heal: true
+  auto-load: true
+  bed-respawn: true
+  biome: ''
+  difficulty: easy
+  entry-fee:
+    enabled: false
+    amount: 0.0
+    currency: '@vault-economy'
+  environment: nether
+  gamemode: survival
+  generator: ''
+  hidden: false
+  hunger: true
+  keep-spawn-in-memory: false
+  player-limit: -1
+  portal-form: all
+  pvp: true
+  respawn-world: ''
+  scale: 8.0
+  seed: 1461311411254061000
+  spawn-location:
+    ==: MVSpawnLocation
+    x: 0.0
+    y: 59.0
+    z: 0.0
+    pitch: 0.0
+    yaw: 0.0
+  spawning:
+    monster:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_underground_creature:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    axolotl:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    misc:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+  world-blacklist: []
+  version: 1.2
+PrillHardcore_the_end:
+  adjust-spawn: true
+  alias: ''
+  allow-advancement-grant: true
+  allow-flight: false
+  allow-weather: true
+  anchor-respawn: true
+  auto-heal: true
+  auto-load: true
+  bed-respawn: true
+  biome: ''
+  difficulty: easy
+  entry-fee:
+    enabled: false
+    amount: 0.0
+    currency: '@vault-economy'
+  environment: the_end
+  gamemode: survival
+  generator: ''
+  hidden: false
+  hunger: true
+  keep-spawn-in-memory: false
+  player-limit: -1
+  portal-form: all
+  pvp: true
+  respawn-world: ''
+  scale: 1.0
+  seed: -951752041278362324
+  spawn-location:
+    ==: MVSpawnLocation
+    x: 0.0
+    y: 61.0
+    z: 0.0
+    pitch: 0.0
+    yaw: 0.0
+  spawning:
+    monster:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_animal:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    water_underground_creature:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    ambient:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    axolotl:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+    misc:
+      spawn: true
+      tick-rate: '@unset'
+      spawn-limit: '@unset'
+      exceptions: []
+  world-blacklist: []
+  version: 1.2
 PrillHub:
   adjust-spawn: true
   alias: ''

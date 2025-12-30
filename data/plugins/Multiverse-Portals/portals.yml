@@ -59,3 +59,43 @@ portals:
     location: -15.0,63.0,26.0:-15.0,66.0,29.0
     world: PrillsAdventure
     destination: w:PrillHub
+  ToBeanin13WM:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: 128.0,-60.0,22.0:131.0,-57.0,22.0
+    world: PrillHub
+    destination: w:BeaninSeason13
+  FromB13ToPHub:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: -871.0,125.0,-11003.0:-868.0,128.0,-11003.0
+    world: BeaninSeason13
+    destination: w:PrillHub
+  DDLakehousePortal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: -714.0,64.0,-181.0:-714.0,67.0,-179.0
+    world: world
+    destination: w:PrillHub
+  PHDodesDunesLakehouse:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: PrLLager207
+    location: 113.0,-60.0,22.0:116.0,-57.0,22.0
+    world: PrillHub
+    destination: p:DDLakehousePortal
